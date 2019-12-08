@@ -12,7 +12,17 @@ matplotlib
 os  
 
 ## Project Overview
-The objective of the project is to build and train a model to identify sound. 
+The objective of the project is to build and train a model to identify sound. Due to the limitation of the obtained dataset, the Neural Network model is able to identify 10 types of sound including:  
+0 = air_conditioner  
+1 = car_horn  
+2 = children_playing  
+3 = dog_bark  
+4 = drilling  
+5 = engine_idling  
+6 = gun_shot  
+7 = jackhammer  
+8 = siren  
+9 = street_music  
 
 ## File Structure
 1. [Audio Classification.ipynb](./Audio&#32;Classification.ipynb) is the main file with all the functions and model definitions and most of the results.  
