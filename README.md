@@ -1,15 +1,15 @@
 # Sound Classification
 
 ## Package Needed
-Keras
-TensorFlow
-pickle
-librosa
-struct
-sklearn
-datetime
-matplotlib
-os
+Keras  
+TensorFlow  
+pickle  
+librosa  
+struct  
+sklearn  
+datetime  
+matplotlib  
+os  
 
 ## Project Overview
 The objective of the project is to build and train a model to identify sound. 
