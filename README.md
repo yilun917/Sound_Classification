@@ -15,10 +15,10 @@ os
 The objective of the project is to build and train a model to identify sound. 
 
 ## File Structure
-This is the [Main Notebook](./Audio&#32;Classification.ipynb) with all the functions and model definitions and most of the results.
-This is the [Model Object](./model.h5) where the Neural Network is defined and store to .h5 file to avoid repeated model compilation.
-This is the [README](./UrbanSound8K_README.txt) of the original dataset.
-This is the [Preprocessed Data](./audio_features_mfcc40.pickle). Processing the data can take 15 minutes up, store the preprocessed data is important to save time.
+  This is the [Main Notebook](./Audio&#32;Classification.ipynb) with all the functions and model definitions and most of the results.
+  This is the [Model Object](./model.h5) where the Neural Network is defined and store to .h5 file to avoid repeated model   compilation.
+  This is the [README](./UrbanSound8K_README.txt) of the original dataset.
+  This is the [Preprocessed Data](./audio_features_mfcc40.pickle). Processing the data can take 15 minutes up, store the preprocessed data is important to save time.
 
 
 
