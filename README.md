@@ -97,10 +97,10 @@ Over all the model has 4 Convolutional blocks. Each block is consisted of a conv
 
 ## Results
 ![alt text](./Result.png)
-The achieved training accuracy is 90% and the validation accuracy is 90%.
+The achieved training accuracy is 90% and the validation accuracy is 85%.
 
 ## Unsuccessful Attempts
-MobileNet model is attempted to be applied, but not successful. The dimensions of the dataset seems to be inconsistent with the predifined model. The MobileNet model works best with square images (in this case audio sprectrum), but the data we have is 173*40*1 which is very streched. This could be the reason while MobileNet and most of other CNN models cannot be applied on the dataset. However, even the bug is fixed, it is likely that CNN models won't work well on audio data.
+MobileNet model is attempted to be applied, but not successful. The dimensions of the dataset seems to be inconsistent with the predifined model. The MobileNet model works best with square images (in this case audio sprectrum), but the data we have is 40x173x1 which is very streched. This could be the reason while MobileNet and most of other CNN models cannot be applied on the dataset. However, even the bug is fixed, it is likely that CNN models won't work well on audio data.
 
 ## Future Developments
 As to the future development, one can either fix the issue with MobileNet (and other CNN networks) and have the model trained on the preprocessed data or use an Recurrent Neural Network (RNN) model. It is much more effective to RNN models on sequential data like audio or speech. Since RNN model can capture the sequential relation in the data, while CNN model does this poorly.
