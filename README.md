@@ -1,16 +1,5 @@
 # Sound Classification
 
-## Package Needed
-Keras  
-TensorFlow  
-pickle  
-librosa  
-struct  
-sklearn  
-datetime  
-matplotlib  
-os  
-
 ## Project Overview
 The objective of the project is to build and train a model to identify sound. Due to the limitation of the obtained dataset, the Neural Network model is able to identify 10 types of sound including:  
 0 = air_conditioner  
@@ -23,6 +12,19 @@ The objective of the project is to build and train a model to identify sound. Du
 7 = jackhammer  
 8 = siren  
 9 = street_music  
+
+## Package Needed
+Keras  
+TensorFlow  
+pickle  
+librosa  
+struct  
+sklearn  
+datetime  
+matplotlib  
+os  
+  
+Setting up a virtual environment and install the required packages in the virtual environment is recommended. So that, different projects will not affect each other.
 
 ## File Structure
 1. [Audio Classification.ipynb](./Audio&#32;Classification.ipynb) is the main file with all the functions and model definitions and most of the results.  
