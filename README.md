@@ -55,7 +55,9 @@ The objective of the project is to build and train a model to identify sound.
 1. This is the [Main Notebook](./Audio&#32;Classification.ipynb) with all the functions and model definitions and most of the results.  
 2. This is the [Model Object](./model.h5) where the Neural Network is defined and store to .h5 file to avoid repeated model   compilation.  
 3. This is the [README](./UrbanSound8K_README.txt) of the original dataset.  
-4. This is the [Preprocessed Data](./audio_features_mfcc40.pickle). Processing the data can take 15 minutes up, store the preprocessed data is important to save time.
+4. This is the [Preprocessed Data](./audio_features_mfcc40.pickle). Processing the data can take 15 minutes up, store the preprocessed data is important to save time.  
+
+**In order for the program to run correctly, the UrbanSound8K folder should be unchanged and stayed in the main folder. The rest of the files need to be in the same folder as the notebook file. Otherwise, the path reference to some of the files in the notebook need to be adjusted accordingly.**
 
 ## How to Use
 At the end of the notebook, you have the part that you can load the model and the pretrained weights. And use the next cell to load user specified sound clip. The sound clip have to have about 2s, and the part containing information need to be within the 2s part. 
