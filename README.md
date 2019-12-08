@@ -63,7 +63,7 @@ At the end of the notebook, you have the part that you can load the model and th
 The data preprocessing in this case is to turn the 1D audio signal to 2D (actually 3D, but the last dimension is 1) audio sprectrum. This is done through Librosa library.  
 One critical parameter-the vertical dimention in the audio sprectrum (the dimention n in the input sprectrum n*173*1) is experimented.  
 ![alt text](./Model&#32;Accuracy&#32;vs.&#32;MFCC&#32;Number.png)  
-As the image show, the vertical dimention of 40 is the best value. 
+As the image show, when the vertical dimention is 40 the model will have the highest accuracy. 
 
 
 ## Model Architecture
