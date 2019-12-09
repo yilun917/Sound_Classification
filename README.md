@@ -13,6 +13,7 @@ The objective of the project is to build and train a model to identify sound. Du
 8 = siren  
 9 = street_music  
 
+
 ## Package Needed
 Keras  
 TensorFlow  
@@ -26,12 +27,16 @@ os
   
 Setting up a virtual environment and install the required packages in the virtual environment is recommended. So that, different projects will not affect each other.
 
+
 ## File Structure
 1. [Audio Classification.ipynb](./Audio&#32;Classification.ipynb) is the main file with all the functions and model definitions and most of the results.  
 2. [sound_classification_model.json](./sound_classification_model.json) is the Model Object where the Neural Network is defined and store to .h5 file to avoid repeated model   compilation.  
 3. [weights.best.basic_cnn.hdf5](./weights.best.basic_cnn.hdf5) is the file that contains the weight used in the model. So that we can quickly continue the progress to do a prediction.
 4. [UrbanSound8K_README.txt](./UrbanSound8K_README.txt) is the README of the original dataset.  
 5. [audio_features_mfcc40.pickle](./audio_features_mfcc40.pickle) is the preprocessed data file. Processing the data can take 15 minutes up, store the preprocessed data is important to save time.  
+
+**In order for the program to run correctly, the UrbanSound8K folder should be unchanged and stayed in the main folder. The rest of the files need to be in the same folder as the notebook file. Otherwise, the path reference to some of the files in the notebook need to be adjusted accordingly.**
+
 
 ## Code Structure
 All the code is contained in the jupyter notebook named "Audio Classification.ipynb".  
@@ -42,22 +47,9 @@ All the code is contained in the jupyter notebook named "Audio Classification.ip
 5. Cell 19 is used to store the model and the trained weights.  
 6. The cells after cell 19 is used to extract the previously built and trained model (another time when you open the jupyter notebook) and then use the model to make prediction on user uploaded data.  
 
+
 ## How to Use
 The entire notebook contains the functions to preprocess the specified dataset, define a Convolutional Neural Network Model and to train the model with the data. The model and the trained weights are save into specified files.  
-At the end of the notebook, you have the part that you can load the model and the pretrained weights. And use the next cell to load user specified sound clip. The sound clip have to have about 2s, and the part containing information need to be within the 2s part. 
-
-## Project Overview
-The objective of the project is to build and train a model to identify sound. 
-
-## File Structure
-1. This is the [Main Notebook](./Audio&#32;Classification.ipynb) with all the functions and model definitions and most of the results.  
-2. This is the [Model Object](./model.h5) where the Neural Network is defined and store to .h5 file to avoid repeated model   compilation.  
-3. This is the [README](./UrbanSound8K_README.txt) of the original dataset.  
-4. This is the [Preprocessed Data](./audio_features_mfcc40.pickle). Processing the data can take 15 minutes up, store the preprocessed data is important to save time.  
-
-**In order for the program to run correctly, the UrbanSound8K folder should be unchanged and stayed in the main folder. The rest of the files need to be in the same folder as the notebook file. Otherwise, the path reference to some of the files in the notebook need to be adjusted accordingly.**
-
-## How to Use
 At the end of the notebook, you have the part that you can load the model and the pretrained weights. And use the next cell to load user specified sound clip. The sound clip have to have about 2s, and the part containing information need to be within the 2s part. 
 
 
