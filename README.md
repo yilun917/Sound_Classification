@@ -33,6 +33,15 @@ Setting up a virtual environment and install the required packages in the virtua
 4. [UrbanSound8K_README.txt](./UrbanSound8K_README.txt) is the README of the original dataset.  
 5. [audio_features_mfcc40.pickle](./audio_features_mfcc40.pickle) is the preprocessed data file. Processing the data can take 15 minutes up, store the preprocessed data is important to save time.  
 
+## Code Structure
+All the code is contained in the jupyter notebook named "Audio Classification.ipynb".  
+1. The first cell is used to import libraries.  
+2. Cell 2 to 7 is used to extract the audio information and store them into local variables for the later part of the function to use. Also, the file is preprocessed and store in pickle file for easy access next time.  
+3. Cell 8 to 12 is used to build Neural Network models in Keras. Note that there are 2 models, one LaNet-5 like CNN model and MobileNet model. Only the LaNet-5 like model works, the MobileNet model is experimented but did not work.  
+4. Cell 13 to 18 is used to train and evaluate the model using the preproocessed data.  
+5. Cell 19 is used to store the model and the trained weights.  
+6. The cells after cell 19 is used to extract the previously built and trained model (another time when you open the jupyter notebook) and then use the model to make prediction on user uploaded data.  
+
 ## How to Use
 The entire notebook contains the functions to preprocess the specified dataset, define a Convolutional Neural Network Model and to train the model with the data. The model and the trained weights are save into specified files.  
 At the end of the notebook, you have the part that you can load the model and the pretrained weights. And use the next cell to load user specified sound clip. The sound clip have to have about 2s, and the part containing information need to be within the 2s part. 
