@@ -88,7 +88,7 @@ Over all the model has 4 Convolutional blocks. Each block is consisted of a conv
 ## Results
 ![alt text](./Result.png)
 As the graph show, from training epoch of about 150 the accuracy improves very slowly. More epoches than 150 may cause over fitting.Thus, the training epoch is set to 150. A slightly lower number (~120) is also acceptable.
-The achieved training accuracy is 90% and the validation accuracy is 85%.
+The achieved training accuracy is ~93% and the validation accuracy is ~89% and the test accuracy is ~90%.
 
 ## Unsuccessful Attempts
 MobileNet model is attempted to be applied, but not successful. The dimensions of the dataset seems to be inconsistent with the predifined model. The MobileNet model works best with square images (in this case audio sprectrum), but the data we have is 40x173x1 which is very streched. This could be the reason while MobileNet and most of other CNN models cannot be applied on the dataset. However, even the bug is fixed, it is likely that CNN models won't work well on audio data.
