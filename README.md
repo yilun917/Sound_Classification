@@ -87,7 +87,7 @@ Over all the model has 4 Convolutional blocks. Each block is consisted of a conv
 
 ## Results
 ![alt text](./Result.png)
-As the graph show, from training epoch of about 150 the accuracy improves very slowly. More epoches than 150 may cause over fitting.Thus, the training epoch is set to 150. A slightly lower number (~120) is also acceptable.
+As the graph show, from training epoch of about 150 the accuracy improves very slowly, as the curve plateaus. More epoches than 150 may cause over fitting.Thus, the training epoch is set to 150. A slightly lower number (~120) is also acceptable.
 The achieved training accuracy is ~93% and the validation accuracy is ~89% and the test accuracy is ~90%.
 
 ## Unsuccessful Attempts
