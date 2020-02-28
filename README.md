@@ -1,7 +1,7 @@
 # Sound Classification
 
 ## Project Overview
-The objective of the project is to build and train a model to identify sound types. Due to the limitation of the obtained dataset, the Neural Network model is able to identify 10 types of sound including:(class number = class name)  
+The objective of the project is to build and train a model to identify sound types. Due to the limitation of the obtained dataset, the Neural Network model is able to identify 10 types of sound including:('class number' = 'class name')  
 0 = air_conditioner  
 1 = car_horn  
 2 = children_playing  
