@@ -21,7 +21,8 @@ pickle
 librosa  
 struct  
 sklearn  
-datetime  
+datetime 
+numpy
 matplotlib  
 os  
   
